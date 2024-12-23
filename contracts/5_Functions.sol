@@ -22,4 +22,6 @@ contract LearnFunction{
         total=value1 + value2;
     }
 
+    
+
 }

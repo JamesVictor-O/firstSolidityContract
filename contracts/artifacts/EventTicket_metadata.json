@@ -6,32 +6,39 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getProduct",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "product",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "total",
+						"name": "_ticketPrice",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTicket",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ticketId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getResult",
+				"name": "getAmount",
 				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -43,9 +50,15 @@
 			},
 			{
 				"inputs": [],
-				"name": "updateResult",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -62,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/5_Functions.sol": "LearnFunction"
+			"contracts/6_Ticket.sol": "EventTicket"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -76,12 +89,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/5_Functions.sol": {
-			"keccak256": "0x12804afff542cd792a7eb39d65ccbbc8f55fa5364e3b5c3d2048d7dc8c82beab",
+		"contracts/6_Ticket.sol": {
+			"keccak256": "0xa5a9e3a9629d6033e0125baa76bbed174fcdbe7797b658e19bb884e0d3d73c7e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://09a99d480caeffa6a548dae878b5af801633f91a6d67cc7587633234e661cbd3",
-				"dweb:/ipfs/QmaCBvjz9c84sEJdkfUJKLAV2RzfL1MbepkFS8nLsTftuF"
+				"bzz-raw://82853659b6e4a727a353ac89329d80213393597292895b6c1ea97869f9c7231d",
+				"dweb:/ipfs/QmfVdbMoMHVPpmpK8EEyLbwPzhs2JtBuFcKa6QxmLJHydK"
 			]
 		}
 	},
