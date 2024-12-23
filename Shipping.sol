@@ -26,7 +26,7 @@ contract Shipping{
          myBook=Books("Atomic habit","James Clear", 2000);
      }
 
-     function getTitle() public returns (string){
+     function getTitle() public view returns (string memory){
         return  myBook.Title;
      }
 

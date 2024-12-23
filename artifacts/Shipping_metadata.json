@@ -46,8 +46,14 @@
 			{
 				"inputs": [],
 				"name": "getTitle",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -129,11 +135,11 @@
 	},
 	"sources": {
 		"Shipping.sol": {
-			"keccak256": "0x8930f7256f8f07a12a7790d84334b3d50cfa8fbad09680b8888f3a529422c67f",
+			"keccak256": "0xd960021724c9ce1da703c409ff51c01492c59a661d4841cac4877d81894c98ec",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0d2ae910e3dfe1e8a5684ad8e728f2ba41afcffc2e2c3d08309c041ed8c07801",
-				"dweb:/ipfs/QmRQiyNDKAZdEF7ThTbfRMp83bsUUxnsgXcFW5QBScJgPW"
+				"bzz-raw://ca457914b88cf60641028429fbd50bb8b2357d3595396ec34b7433654915c17b",
+				"dweb:/ipfs/Qma2Axvd2c7UpgRMr1wAmANvdASzCL4t6waGe8MarbPzzU"
 			]
 		}
 	},
