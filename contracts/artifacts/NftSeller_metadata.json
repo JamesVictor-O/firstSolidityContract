@@ -6,38 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_ticketPrice",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
+				"inputs": [],
+				"stateMutability": "payable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "buyTicket",
+				"inputs": [],
+				"name": "deposit",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "ticketId",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getAmount",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -50,12 +38,38 @@
 			},
 			{
 				"inputs": [],
-				"name": "message",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "priceOfNft",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -75,7 +89,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/6_Ticket.sol": "EventTicket"
+			"contracts/9_NftSeller.sol": "NftSeller"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -89,12 +103,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/6_Ticket.sol": {
-			"keccak256": "0xa5a9e3a9629d6033e0125baa76bbed174fcdbe7797b658e19bb884e0d3d73c7e",
+		"contracts/9_NftSeller.sol": {
+			"keccak256": "0xecbd562015825ce4cb0b3ae6f2ac6f72c504e6d241e9da28bb1d9b9a3fb907ef",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://82853659b6e4a727a353ac89329d80213393597292895b6c1ea97869f9c7231d",
-				"dweb:/ipfs/QmfVdbMoMHVPpmpK8EEyLbwPzhs2JtBuFcKa6QxmLJHydK"
+				"bzz-raw://f9835b0d7c1e439a08417e02164c65c2c66a0ca5c88cd9f63cf68caa34f768eb",
+				"dweb:/ipfs/QmdeacPKahPPaLfSQjywZPfB2jY5XYifEHYAiCw6NGepQN"
 			]
 		}
 	},
